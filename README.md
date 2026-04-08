@@ -7,7 +7,7 @@
 [![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/xemu-AppImage-Enhanced)](https://github.com/pkgforge-dev/xemu-AppImage-Enhanced/releases/latest)
 
 <p align="center">
-  <img src="https://github.com/pkgforge-dev.png" width="128" />
+  <img src="https://raw.githubusercontent.com/xemu-project/xemu/refs/heads/master/ui/icons/xemu.svg" width="128" />
 </p>
 
 
