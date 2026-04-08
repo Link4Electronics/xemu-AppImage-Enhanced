@@ -19,8 +19,10 @@ get-debloated-pkgs --add-common --prefer-nano
 
 # if you also have to make nightly releases check for DEVEL_RELEASE = 1
 #
- if [ "${DEVEL_RELEASE-}" = 1 ]; then
- 	make-aur-package xemu-git
- else
- 	make-aur-package xemu
- fi
+if [ "${DEVEL_RELEASE-}" = 1 ]; then
+	package=xemu-git
+else
+	package=xemu
+fi
+make-aur-package "$package"
+pacman -Q "$package" | awk '{print $2; exit}' > ~/version
